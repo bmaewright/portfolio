@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style: none;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex-basis: 100%;
+}
+
+ul {
+  margin: 40px 0;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+}
+
+nav li.column {
+  flex-basis: 20%;
+}
+
+nav li a {
+  font-family: Montserrat;
+  font-style: bold;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: Montserrat;
+  justify-content: center;
+  margin: 40px 0 80px 0;
+}
+
+h2 {
+  display: block;
+  font-family: Montserrat;
+  text-align: center;
+  flex-basis: 100%;
+}
+
+.intro {
+  margin: 20px 0 60px 0;
+}
+.photo-box {
+  flex-basis: 50%;
+  border: 2px solid black;
+  padding: 0 20px 0 30px;
+  height: 250px;
+}
+
+.profile-pic {
+  display: block;
+  width: auto;
+  max-height: 100%;
+}
+
+.intro-text {
+  flex-basis: 50%;
+  padding: 0 30px 0 20px;
+}
+
+.projects {
+  /* background-color: grey; */
+  margin: 50px;
+  height: 400px;
+}
+
+.project {
+  flex-basis: 20%;
+  border: 1px solid black;
+  height: 250px;
+  margin: 20px auto;
+}
+
+.one {
+  background-image: url(../assets/Kerrara.JPG);
+  background-position: center;
+  background-size: 300%;
+  background-repeat: no-repeat;
+  background-color: rgba(53, 151, 163, 0.5);
+}
+
+.one:hover {
+  background-color: rgba(53, 151, 163, 0.5);
+}
+
+@media screen and (max-width: 800px) {
+  .project {
+    flex-basis: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project {
+    flex-basis: 100%;
+  }
+  .one {
+    background-size: 200%;
+  }
+}
